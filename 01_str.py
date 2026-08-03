@@ -84,8 +84,8 @@ print("  [0:3]", "Hello python course"[0:3])  # 0-3 not include 3
 print("  [1:4]", "Hello python course"[1:4])  # 1-4 not include 4
 #                 0123456789012345678
 print("[1:8:2]", "Hello python course"[1:8:2])  # 1-8 not include 8
-print("  [0:4]", "Hello python course"[0:4])  # 0-4 not include 4
-print("   [:4]", "Hello python course"[:4])  # 0-4 not include 4
+print("  [0:4]", "Hello python course"[0:5])  # 0-4 not include 4
+print("   [:4]", "Hello python course"[:5])  # 0-4 not include 4
 print(len("Hello python course"))  # 19
 print(" [0:19]", "Hello python course"[0:19])  # 0-end
 print("   [0:]", "Hello python course"[0:])  # 0-end
