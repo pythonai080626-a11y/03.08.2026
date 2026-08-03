@@ -141,4 +141,14 @@ split this sentence into a string of words and print it
 "Python Core Study Mechanics"
 run on this string , print each character in a new line using a for loop
 don't print space
+P
+y
+t
+h
+o
+n
+C
+o
+r
+e...
 '''
