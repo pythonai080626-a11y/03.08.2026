@@ -5,7 +5,7 @@ password = input("Password: ")
 # Regular Expression
 pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{12,}$'
 # 08-2394875
-if re.match(pattern, password) == True:
+if re.match(pattern, password):
     print('Valid')
 else:
     print('Invalid')
