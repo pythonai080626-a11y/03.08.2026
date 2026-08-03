@@ -106,9 +106,12 @@ id_num = "63 251283 B 185"
 phone = "0419-0288803"
 
 # Expected Output Layout: (use center)
-# | Borchardt, Petros     | 
+# |   Borchardt, Petros   | 
 # | ID: [63 251283 B 185] | 
 # | Phone: 0419-0288803   |
+
+full_name = f"{last name}, {first_name}"
+print(f"| {full_name.center(22)} |")
 
 3
 Given the dirty input string user_input = "   jOhN_dOe_2026   ", 
@@ -133,4 +136,9 @@ Given the string course = "Python Core Study Mechanics"
 check if the first word "Python"
 check if the last word "Mechanics"
 split this sentence into a string of words and print it 
+
+7
+"Python Core Study Mechanics"
+run on this string , print each character in a new line using a for loop
+don't print space
 '''
