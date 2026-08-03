@@ -98,45 +98,72 @@ print(" [::-1]", "Hello python course"[::-1])  # 0-end jump 2
 name = "Danny"
 # Fix this line:
 print(f"{name} your name is in length len(name)")
+'''
+print(f"{name} your name is in length {len(name)}")
 
+'''
 2
+# Expected Output Layout: (use center)
+# |   Borchardt, Petros   | 
+# | ID: [63 251283 B 185] | 
+# | Phone: 0419-0288803   |
+'''
 first_name = "Petros"
 last_name = "Borchardt"
 id_num = "63 251283 B 185"
 phone = "0419-0288803"
 
-# Expected Output Layout: (use center)
-# |   Borchardt, Petros   | 
-# | ID: [63 251283 B 185] | 
-# | Phone: 0419-0288803   |
+print(f"| {(last_name + ", " + first_name).center(22)} |")
+print(f"| {("ID: [" + id_num + "]").center(22)} |")
+print(f"| {("Phone: " + phone).center(22)} |")
 
-full_name = f"{last name}, {first_name}"
-print(f"| {full_name.center(22)} |")
-
+'''
 3
 Given the dirty input string user_input = "   jOhN_dOe_2026   ", 
 write python expressions to:Remove the leading and trailing whitespaces
 Convert the entire string to lowercase
 Replace all underscores (_) with hyphens (-)
+'''
+user_input = "   jOhN_dOe_2026   "
+print(user_input.strip().lower().replace("_", "-"))
+strip_txt = user_input.strip()  # remove space
+lower_text = strip_txt.lower()  # to lower
+replace_hyphen = lower_text.replace("_", "-")  # change _ to -
+print(replace_hyphen)
 
+'''
 4
 answer True/False
-print("python3".isalpha())
-print("12 34".isdigit())
-print("   ".isspace())
-print("HELLO".isupper())
-print("hi".islower())
+print("python3".isalpha())  # false
+print("12 34".isdigit())  # false
+print("   ".isspace())  # true
+print("HELLO".isupper())  # true
+print("hi".islower())  # true
 
 5
 msg = "step on no pets"
-check if we reverse this str we get the same string 
+check if we reverse this str we get the same string
+'''
+msg = "step on no pets"
+print(msg == msg[::-1])
+if msg == msg[::-1]:
+    print('reverse equals original')
+else:
+    print('reverse not equals original')
 
+'''
 6
 Given the string course = "Python Core Study Mechanics"
 check if the first word "Python"
 check if the last word "Mechanics"
 split this sentence into a string of words and print it 
+'''
+mech =  "Python Core Study Mechanics"
+print(mech.startswith("Python"))
+print(mech.endswith("Mechanics"))
+print(mech.split())
 
+'''
 7
 "Python Core Study Mechanics"
 run on this string , print each character in a new line using a for loop
@@ -152,3 +179,20 @@ o
 r
 e...
 '''
+#       012345678901234567890123456
+mech = "Python Core Study Mechanics"
+# for i in range(0, 26 + 1):
+#     if not mech[i].isspace():  # if mech [i] != ' ':
+#         print(mech [i])
+for i in range(0, len(mech)):
+    if not mech[i].isspace():  # if mech [i] != ' ':
+        print(mech[i])
+
+hello = "hello"
+for c in "hello":
+    print(c)
+
+# for-each
+for c in mech:
+    if not c.isspace():  # if c != ' ':
+        print(c)
